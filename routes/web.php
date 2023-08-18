@@ -27,6 +27,10 @@ Route::get('/home', function () {
     return view('home',['name' => 'Elif']);
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 
 
 
