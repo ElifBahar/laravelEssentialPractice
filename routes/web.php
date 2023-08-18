@@ -22,8 +22,9 @@ Route::get('/returnHTML', function () {
     return '<h1>Welcome</h1>';
 });
 
+//this is a route returning a view with some variable
 Route::get('/home', function () {
-    return view('home');
+    return view('home',['name' => 'Elif']);
 });
 
 
