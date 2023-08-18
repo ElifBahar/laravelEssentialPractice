@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/',[WelcomeController::class,'index']);
+
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+changed with controller route*/
 
 //this is a route returns a HTML snippet
 Route::get('/returnHTML', function () {
