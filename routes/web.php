@@ -31,6 +31,11 @@ Route::get('/about', function () {
     return view('about');
 });
 
+//returning component structure home page
+Route::get('/homeComponent', function () {
+    return view('homeComponent');
+});
+
 
 
 
