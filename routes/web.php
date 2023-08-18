@@ -17,7 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//this is a route returns a HTML snippet
 Route::get('/returnHTML', function () {
     return '<h1>Welcome</h1>';
 });
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+
+
+
 
