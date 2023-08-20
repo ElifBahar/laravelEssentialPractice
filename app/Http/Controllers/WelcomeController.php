@@ -18,10 +18,17 @@ class WelcomeController extends Controller
         // dd($users);
 
         // 3. Eloquent ORM
-        $students = Student::all(); // returns collection
-        foreach ($students as $student){
-            echo $student->name. "<br>";
-        }
+        //$students = Student::all(); // returns collection
+        //foreach ($students as $student){
+        //    echo $student->name. "<br>";
+        //}
+
+
+        //inserting data to database
+        $student = new Student();
+        $student->name = 'Bahar';
+        $student->email = 'email@email.com';
+        $student->save();
 
 
         return view('welcome');
