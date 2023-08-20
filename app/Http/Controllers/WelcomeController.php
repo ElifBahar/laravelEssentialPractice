@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -17,6 +18,10 @@ class WelcomeController extends Controller
         // dd($users);
 
         // 3. Eloquent ORM
+        $students = Student::all(); // returns collection
+        foreach ($students as $student){
+            echo $student->name. "<br>";
+        }
 
 
         return view('welcome');
